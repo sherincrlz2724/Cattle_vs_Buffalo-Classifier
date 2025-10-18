@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #333; }
+        .result { margin-top: 30px; font-size: 20px; }
+        img { max-width: 400px; margin-top: 20px; border: 2px solid #ccc; }
+        a { display: inline-block; margin-top: 30px; text-decoration: none; color: #007BFF; }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="result">
+        <p><strong>Prediction:</strong> {{ prediction }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+    </div>
+    <img src="{{ image_path }}" alt="Uploaded Image">
+    <br>
+    <a href="/">Classify Another Image</a>
+</body>
+</html>
